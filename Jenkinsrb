@@ -17,7 +17,8 @@ pipeline{
             sh 'mvn clean package'
         }
     }
-    
+
+   /*
     stage('Sonarqube Report Analysis'){
         steps{
             sh 'mvn sonar:sonar'
@@ -36,6 +37,6 @@ pipeline{
               sh 'scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.11.40:/opt/apache-tomcat-9.0.78/webapps/'  
             }
         }
-    }
+    }   */
  }
 }
